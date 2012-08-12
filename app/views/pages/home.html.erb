@@ -1,0 +1,103 @@
+	<div data-role="page" id="home" data-title="BALMAIN PCYC">
+
+    <div data-role="header">
+      <h1>BALMAIN PCYC</h1>
+    </div>
+
+    <div data-role="content">
+
+      <div style="text-align: center;">
+        <h2>PCYC under 9's rugby</h2>
+        <img src="images/pcyc-pic.jpg" width="200" alt="group photo" class="round-4">
+      </div>
+
+      <p>Welcome PCYC under 9's rugby. To find out when, where and time of the next match ... click Match Info below. </p>
+		
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="nav">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+          <li><a href="#match-info">Match Info</a></li>
+          <li><a href="#notice-board">Notice Board</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+<div data-role="page" id="match-info">
+
+    <div data-role="header">
+      <h1>Match Information</h1>
+    </div>
+
+    <div data-role="content">
+		<h2>Sunday 12th August 2012 </h2> <p> PCYC v's Leichhardt Wanderers Black</p>
+		<h2>Time </h2> <p> 9:20am for 9:50am kick off</p>
+      <ul data-role="listview">
+        <li > 
+	<a href="#map">
+
+		<h2>Where </h2> <p> St Patricks College oval, Dundas</p>
+		</a>
+          
+        </li>
+       
+		
+      </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="nav">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#match-info" class="ui-btn-active ui-state-persist">Match Info</a></li>
+          <li><a href="#notice-board">Notice Board</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div data-role="page" id="map" data-title="Location">
+<div data-role="header">
+  <h1>Location Map</h1>
+</div>
+
+<div data-role="content">
+
+  <div style="text-align: center;">
+    <div id="map_canvas" style="width:300px;height:400px; margin:0 auto;"></div>
+  </div>
+
+</div>
+
+<div data-role="footer" data-position="fixed" data-id="nav">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="/#home">Home</a></li>
+      <li><a href="/#match-info" class="ui-btn-active ui-state-persist">Match Info</a></li>
+      <li><a href="/#notice-board">Notice Board</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var $jq = jQuery.noConflict();
+
+$jq('#map').live('pageshow',function(){
+
+    $jq('#map_canvas').gmap({ 'center': new google.maps.LatLng(-33.800048,151.04609),
+                        'zoom':14, 'callback':function() {
+                            $jq('#map_canvas').gmap('addMarker',{'position':new google.maps.LatLng(-33.800048,151.04609)})
+                        } });
+
+});
+
+</script>
+
+
+
