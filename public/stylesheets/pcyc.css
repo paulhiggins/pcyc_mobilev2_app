@@ -4,3 +4,5 @@
 #match-info h2 {display: block;font-size: 16px;font-weight: bold;margin: 0.6em 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; color:#2F3E46;}
 #match-info p {display: block;font-size: 12px;font-weight: normal;margin: -0.5em 0 0.6em;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; color:#2F3E46;}
 #match-info .ui-content .ui-listview {margin:0 -15px;}
+
+#posts p {display: block;font-size: 12px;font-weight: normal;margin: -8px 0 0 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; color:#2F3E46; padding:0 0 5px 15px;}
