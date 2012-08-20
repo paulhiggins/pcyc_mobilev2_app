@@ -10,7 +10,7 @@
 	<li>
 		
 		<%= link_to post.title, post %>
-		<p> <%= post.created_at.to_s(:short) %> </p>
+		<p> <%= post.created_at.in_time_zone("Sydney").to_s(:short) %> </p>
 		<%= link_to 'edit post', edit_post_path(post), "data-icon" => "gear" %>
 	</li>
 	<% end %>
