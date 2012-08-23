@@ -31,12 +31,12 @@
     </div>
 
     <div data-role="content">
-		<h2>Sunday 19th August 2012 </h2> <p> PCYC v's Strathfield Raiders Red</p>
-		<h2>Time </h2> <p> 9:50am for 10:20am kick off</p>
+		<h2>Sunday 23rd August </h2> <p> PCYC v's Leichhardt Wanderers</p>
+		<h2>Time </h2> <p> 8:30am for 9:00am kick off</p>
       <ul data-role="listview">
         <li > 
 	<a href="#map">
-		<h2>Where </h2> <p> Airey Park, Homebush</p>
+		<h2>Where </h2> <p> St Patrick’s, 151 Kirby Street, Dundas</p>
 		</a>          
         </li>		
       </ul>
@@ -83,9 +83,9 @@ var $jq = jQuery.noConflict();
 
 $jq('#map').live('pageshow',function(){
 
-    $jq('#map_canvas').gmap({ 'center': new google.maps.LatLng(-33.867565,151.07347),
+    $jq('#map_canvas').gmap({ 'center': new google.maps.LatLng(-33.801046,151.047528),
                         'zoom':14, 'callback':function() {
-                            $jq('#map_canvas').gmap('addMarker',{'position':new google.maps.LatLng(-33.867565,151.07347)})
+                            $jq('#map_canvas').gmap('addMarker',{'position':new google.maps.LatLng(-33.801046,151.047528)})
                         } });
 
 });
